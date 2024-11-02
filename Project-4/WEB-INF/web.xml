@@ -1,0 +1,113 @@
+<web-app>
+
+    <display-name>
+        CNT 4714 Spring 2024 Servlet.JSP Home Page
+    </display-name>
+
+    <!-- Definitions and Maps -->
+
+
+<!-- Authentication Servlet-->
+    <servlet>
+        <servlet-name>authentication</servlet-name>
+        <description> Handles authentication Request </description>
+        <servlet-class>authentication</servlet-class>
+    </servlet>
+
+<!--Authentication Servlet-->
+        <servlet-mapping>
+            <servlet-name>authentication</servlet-name>
+            <url-pattern>/userLogin</url-pattern>
+        </servlet-mapping>
+
+<!--Root User Servlet-->
+      <servlet>
+         <servlet-name>rootServlet</servlet-name>
+         <description> A simple servlet that handles an HTTP get request. </description>
+         <servlet-class>rootServlet</servlet-class>
+      </servlet>
+
+                <servlet-mapping>
+                  <servlet-name>rootServlet</servlet-name>
+                  <url-pattern>/RootUserApp</url-pattern>
+               </servlet-mapping>
+
+<!--Client User Servlet-->
+        <servlet>
+           <servlet-name>clientServlet</servlet-name>
+           <description> A simple servlet that handles an HTTP get request. </description>
+           <servlet-class>clientServlet</servlet-class>
+        </servlet>
+
+                <servlet-mapping>
+                  <servlet-name>clientServlet</servlet-name>
+                  <url-pattern>/ClientUserApp</url-pattern>
+                </servlet-mapping>
+
+<!--Data Entry User Servlets-->
+
+        <servlet>
+           <servlet-name>suppliersInsert</servlet-name>
+           <description> Handles Data Entry User Suppliers records </description>
+           <servlet-class>suppliersInsert</servlet-class>
+        </servlet>
+
+                <servlet-mapping>
+                  <servlet-name>suppliersInsert</servlet-name>
+                  <url-pattern>/SupplierSub</url-pattern>
+                </servlet-mapping>
+
+
+
+
+        <servlet>
+           <servlet-name>partsInsert</servlet-name>
+           <description> Handles Data Entry User parts records </description>
+           <servlet-class>partsInsert</servlet-class>
+        </servlet>
+
+                <servlet-mapping>
+                  <servlet-name>partsInsert</servlet-name>
+                  <url-pattern>/PartSub</url-pattern>
+                </servlet-mapping>
+
+
+
+
+        <servlet>
+           <servlet-name>shipmentsInsert</servlet-name>
+           <description> Handles data entry user shipments records </description>
+           <servlet-class>shipmentsInsert</servlet-class>
+        </servlet>
+
+                <servlet-mapping>
+                  <servlet-name>shipmentsInsert</servlet-name>
+                  <url-pattern>/ShipSub</url-pattern>
+                </servlet-mapping>
+
+
+
+        <servlet>
+           <servlet-name>jobsInsert</servlet-name>
+           <description> Handles data entry user Jobs records </description>
+           <servlet-class>jobsInsert</servlet-class>
+        </servlet>
+
+                <servlet-mapping>
+                  <servlet-name>jobsInsert</servlet-name>
+                  <url-pattern>/JobSub</url-pattern>
+                </servlet-mapping>
+
+<!--The Accountant User Servlet-->
+         <servlet>
+           <servlet-name>accountantServlet</servlet-name>
+           <description> Handles data entry user Jobs records </description>
+           <servlet-class>accountantServlet</servlet-class>
+        </servlet>
+
+                <servlet-mapping>
+                  <servlet-name>accountantServlet</servlet-name>
+                  <url-pattern>/AccServ</url-pattern>
+                </servlet-mapping>
+
+</web-app>
